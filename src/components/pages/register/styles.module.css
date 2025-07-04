@@ -1,0 +1,21 @@
+.container {
+  height: 100vh;
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 400px;
+}
+
+.input {
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding-left: 32px;
+}
