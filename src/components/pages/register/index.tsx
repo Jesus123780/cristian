@@ -42,7 +42,6 @@ export const RegisterPage = () => {
             <div className={styles.container}>
                 <form onSubmit={handleSubmit} className={styles.form}>
                     <Text as='h1' variant='title'>Regístrate</Text>
-
                     <Input
                         className={styles.input}
                         placeholder='Usuario'
