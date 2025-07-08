@@ -1,9 +1,8 @@
+import { DashboardPage } from '@/components/pages/dashboard'
 import React from 'react'
 
-const Register = () => {
-  return (
-    <div>Register</div>
-  )
+const Dashboard = () => {
+  return <DashboardPage />
 }
 
-export default Register
+export default Dashboard

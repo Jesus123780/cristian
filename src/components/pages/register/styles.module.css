@@ -67,8 +67,28 @@ html, body {
   transform: scale(1.03);
   transition: background-color 0.5s ease, transform 0.2s ease;
 }
+.link{
+  color: var(--primary-color);
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 10px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.link:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+  transform: scale(1.20);
+}
+ .text {
+  color: var(--foreground-color-secondary);
+  font-size: 16px;
+  margin-top: 20px;
+  transform: translateY(20px);
+ }
+ 
 
-@keyframes fadeInUp {
+  @keyframes fadeInUp {
   0% {
     opacity: 0;
     transform: translateY(30px);

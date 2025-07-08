@@ -5,7 +5,7 @@ export const Header = ({
 }) => {
   return (
     <header>
-        Header
+        que es lo que esta pasando ?
     </header>
   )
 }
