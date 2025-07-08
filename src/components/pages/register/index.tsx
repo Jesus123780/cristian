@@ -1,13 +1,13 @@
-'use client';
+'use client'
 
-import { Button } from '@/components/atoms/buttons';
-import { Input } from '@/components/atoms/inputs';
-import React from 'react';
-import { Text } from '@/components/atoms/text';
-import Link from 'next/link';
-import { ROUTES } from '@/utils';
-import { useForm } from '@/hooks/useForm';
-import styles from './styles.module.css';
+import { Button } from '@/components/atoms/buttons'
+import { Input } from '@/components/atoms/inputs'
+import React from 'react'
+import { Text } from '@/components/atoms/text'
+import Link from 'next/link'
+import { ROUTES } from '@/utils'
+import { useForm } from '@/hooks/useForm'
+import styles from './styles.module.css'
 
 export const RegisterPage = () => {
     const initialState = {
@@ -20,12 +20,12 @@ export const RegisterPage = () => {
     const { formState, handleChange, handlereset } = useForm(initialState)
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault()
 
         // Validación básica
         if (formState.password !== formState.confirmPassword) {
-            alert('Las contraseñas no coinciden');
-            return;
+            alert('Las contraseñas no coinciden')
+            return
         }
 
         // Aquí podrías enviar los datos a un backend o API
@@ -35,7 +35,7 @@ export const RegisterPage = () => {
             password: formState.password
         })
         handlereset()
-    };
+    }
 
     return (
         <div className={styles.FatherContainer}>
@@ -48,7 +48,7 @@ export const RegisterPage = () => {
                         name='usuario'
                         value={formState.usuario}
                         onChange={(e) =>  {
-                            handleChange(e);
+                            handleChange(e)
                             
                         }}
                     />
@@ -99,5 +99,5 @@ export const RegisterPage = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
